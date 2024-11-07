@@ -62,6 +62,21 @@
     background-color: #ffffff00;
 }
 
+.students_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.student1-2-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.student3-4-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .student1 {
     width: 20vw;
     height: 20vw;
@@ -95,6 +110,11 @@
         width: 66vw;
     }
 
+    .students_container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .student1 {
         width: 40vw;
         height: 40vw;
@@ -113,5 +133,54 @@
     .student4{
         width: 40vw;
         height: 40vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .image_container {
+        flex-direction: column;
+    }
+    
+    .left_image {
+        width: 66vw;
+    }
+    
+    .right_image {
+        width: 66vw;
+    }
+
+    .students_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .student1-2-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .student3-4-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .student1 {
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    .student2 {
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    .student3{
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    .student4{
+        width: 80vw;
+        height: 80vw;
     }
 }
