@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--css style sheet link-->
+<head>
+    <link rel="preload" href="static/banners_style.css" as="style" onload="this.rel='stylesheet'">
+</head>
+
+<!--Body content-->
+<body>
+    <header>
+        <section>
+            <img src="static/wavy-flag-germany-texture-background-generative-ai.jpg" alt="Image of a German wavy flag" class="home_flag_image">
+        </section>
+        <section class="logo-home-section">
+            <a href="/">
+                <img src="static/ParlonsDeutschLogoSlogan.png" alt="AWAP new logo" class='ccb-logo-home'>
+            </a>
+        </section>
+        <section class="nav-section">
+            <span class="hamburger-menu">&#9776;</span>
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/home">About us</a></li>
+                    <li><a href="/home">Why a website</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="home_main_title">
+            <h1>
+                Verband zur Förderung des Deutschen in der Wallonie
+            </h1>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            const navMenu = document.querySelector('nav ul');
+            const body = document.querySelector('body');
+            // Toggle the active class on menu
+            navMenu.classList.toggle('active');
+            // Prevent body scroll when menu is active
+            body.classList.toggle('menu-open');
+        });
+    </script>
+    <main>
+        <!--actual content section-->
+        <section class="content_main">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="preload" href="static/home_style.css" as="style" onload="this.rel='stylesheet'">
+                <title>Home | AWAP</title>
+            </head>
+            <body class="content">
+                <div class="content_container">
+                    <div class="text_section">
+                        <h1>Pourquoi cette association ?</h1>
+                        <div>L'association a été créée au début du siècle suite à deux constats :</div>
+                            <ul>
+                                <li>En Wallonie, la situation de la langue allemande dans l'enseignement et dans le secteur économique est très différente de celle de la Flandre et de la Région bruxelloise. Il faut donc des stratégies spécifiques pour la promouvoir.</li>
+                                <li>Le territoire de langue allemande fait partie intégrante de la Région wallonne qui est, dès lors, officiellement bilingue. </li>
+                            </ul>
+                        <div>Quelques exemples de réalisations :</div>
+                            <ul>
+                                <li>Diffusion d'informations sur l'importance de la langue allemande en Belgique, en Europe et dans le monde;</li>
+                                <li>Contacts avec les écoles et les associations de parents;</li>
+                                <li>Lobbying auprès des décideurs politiques;</li>
+                                <li>Concours dans les écoles;</li>
+                                <li>Création, avec le concours du Parlement et du Gouvernement de Wallonie, d'une « Journée de la langue allemande » (troisième mercredi du mois d'octobre);</li>
+                                <li>Articles en allemand dans la revue  Vivre la Wallonie;</li>
+                                <li>Création, dans les dix « Maisons de Wallonie » de stands où le public peut s'informer sur la Communauté germanophone et sur l'importance de la langue allemande.</li>
+                            </ul>
+                        <div>Contact: manfred.peters@unamur.be ou apaw.namur@gmail.com</div>
+                    </div>
+                    <div class="image_container">
+                        <div class="left_image">
+                            <img src="static/WallonieCarte.png" alt="Carte simplifiée de la Wallonie avec le coq hardi en superposition">
+                        </div>
+                        <div class="right_image">
+                            <img src="static/AllemagneCarte.png" alt="Carte simplifiée de l'Allemagne">
+                        </div>
+                    </div>
+                </div>
+            </body>
+        </section>
+    </main>
+</body>
+
+</html>

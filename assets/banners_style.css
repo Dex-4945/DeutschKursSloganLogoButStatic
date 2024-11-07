@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-home-section {
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+    display: flex;
+}
+
+.ccb-logo-home {
+    width: 205px;
+    height: auto;
+}
+
+.home_flag_image {
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+    top: 0px;
+}
+
+.home_main_title {
+    background-color: None;
+    position: absolute;
+    display: flex;
+    top: 210px;
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_main_title h1 {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    font-size: xx-large;
+    color: #fab730;
+    text-shadow:
+        -1px -1px 15px #221956,
+        1px -1px 15px #221956,
+        -1px  1px 15px #221956,
+        1px  1px 15px #221956;
+    
+}
+
+.nav-section {
+    position: absolute;
+    top: 160px;
+    align-items: flex-end;
+    justify-content: end;
+    width: 100%;
+}
+
+nav ul {
+    margin-left: auto;
+    padding-left: 0;
+    width: auto;
+    max-width: 550px;
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav ul li a {
+    color: #fab730;
+    text-shadow:
+        -1px -1px 10px #221956,
+        1px -1px 10px #221956,
+        -1px  1px 10px #221956,
+        1px  1px 10px #221956;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 20;
+    color: white;
+}
+
+@media (max-width: 1250px) {
+
+    nav ul {
+        margin-left: 50%;
+        padding-left: 75px;
+        width: auto;
+        max-width: 550px;
+        list-style-type: none;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    @media (max-width: 850px) {
+        nav ul {
+            position: absolute;
+            right: -100%;
+            width: 30%;
+            height: auto;
+            background-color: #221956;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 4px;
+            padding-top: 0px;
+            padding-bottom: 29290px;
+            transition: right 0.7s ease-in-out;
+            padding-left: 0px;
+            border-radius: 10px 0 0 10px;
+        }
+
+        nav ul li {
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            border-bottom: 2px solid #fab730;
+            border-left: 2px solid #fab730;
+            border-radius: 10px 0 0 10px;
+        }
+
+        nav ul li a {
+            color: #fab730;
+        }
+
+        .nav-section {
+            width: 100%;
+            text-align: right;
+        }
+
+        .hamburger-menu {
+            display: block;
+            width: auto;
+            margin-right: 2%;
+            margin-top: 4px;
+            margin-left: auto;
+        }
+
+        nav ul.active {
+            right: 0;
+            display: flex;
+        }
+        body.menu-open {
+            overflow: hidden;
+        }
+        
+        @media (max-width: 800px) {
+            .home_main_title {
+                align-items: center;
+            }
+            .home_main_title h1 {
+                font-size: 4vw;
+
+            }
+        }
+    }
+}
