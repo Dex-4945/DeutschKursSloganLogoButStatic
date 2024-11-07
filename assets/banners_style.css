@@ -75,6 +75,7 @@ nav ul {
     flex: 1;
     justify-content: space-between;
     text-align: center;
+    flex-direction: row;
 }
 
 nav ul li {
@@ -90,14 +91,6 @@ nav ul li a {
         1px  1px 10px #221956;
 }
 
-.hamburger-menu {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 20;
-    color: white;
-}
-
 @media (max-width: 1250px) {
 
     nav ul {
@@ -110,58 +103,21 @@ nav ul li a {
         flex: 1;
         justify-content: space-between;
         text-align: center;
+        flex-direction: row;
     }
 
     @media (max-width: 850px) {
         nav ul {
-            position: absolute;
-            right: -100%;
-            width: 30%;
-            height: auto;
-            background-color: #221956;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            margin-top: 4px;
-            padding-top: 0px;
-            padding-bottom: 29290px;
-            transition: right 0.7s ease-in-out;
-            padding-left: 0px;
-            border-radius: 10px 0 0 10px;
-        }
-
-        nav ul li {
-            padding: 10px 0;
-            text-align: center;
-            width: 100%;
-            border-bottom: 2px solid #fab730;
-            border-left: 2px solid #fab730;
-            border-radius: 10px 0 0 10px;
-        }
-
-        nav ul li a {
-            color: #fab730;
-        }
-
-        .nav-section {
-            width: 100%;
-            text-align: right;
-        }
-
-        .hamburger-menu {
-            display: block;
+            margin-left: 50%;
+            padding-left: 75px;
             width: auto;
-            margin-right: 2%;
-            margin-top: 4px;
-            margin-left: auto;
-        }
-
-        nav ul.active {
-            right: 0;
+            max-width: 550px;
+            list-style-type: none;
             display: flex;
-        }
-        body.menu-open {
-            overflow: hidden;
+            flex: 1;
+            justify-content: space-between;
+            text-align: center;
+            flex-direction: column;
         }
         
         @media (max-width: 800px) {
