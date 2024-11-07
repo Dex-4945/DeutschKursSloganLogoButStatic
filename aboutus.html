@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--css style sheet link-->
+<head>
+    <link rel="preload" href="static/banners_style.css" as="style" onload="this.rel='stylesheet'">
+</head>
+
+<!--Body content-->
+<body>
+    <header>
+        <section>
+            <img src="static/wavy-flag-germany-texture-background-generative-ai.jpg" alt="Image of a German wavy flag" class="home_flag_image">
+        </section>
+        <section class="logo-home-section">
+            <a href="/">
+                <img src="static/ParlonsDeutschLogoSlogan.png" alt="AWAP new logo" class='ccb-logo-home'>
+            </a>
+        </section>
+        <section class="nav-section">
+            <span class="hamburger-menu">&#9776;</span>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/aboutus.html">About us</a></li>
+                    <li><a href="/index.html">Why a website</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="home_main_title">
+            <h1>
+                Verband zur Förderung des Deutschen in der Wallonie
+            </h1>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            const navMenu = document.querySelector('nav ul');
+            const body = document.querySelector('body');
+            // Toggle the active class on menu
+            navMenu.classList.toggle('active');
+            // Prevent body scroll when menu is active
+            body.classList.toggle('menu-open');
+        });
+    </script>
+    <main>
+        <!--actual content section-->
+        <section class="content_main">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="preload" href="static/home_style.css" as="style" onload="this.rel='stylesheet'">
+                <title>About us | AWAP</title>
+            </head>
+            <body class="content">
+                <div class="content_container">
+                    <div class="text_section">
+                        <h1>Qui sommes-nous</h1>
+                        <div>Une équipe de quatre étudiants de l'IHECS. Nous suivons un cours de langue Allemande en troisième année. Nous sommes donc en Bac3</div>
+                        <div>Les membres de cette équipe sont:</div>
+                            <ul>
+                                <li>Cosmina</li>
+                                <li>Adrian</li>
+                                <li>Jade</li>
+                                <li>Samuel</li>
+                            </ul>
+                    </div>
+                    <div class="image_container">
+                        <div class="student1">
+                            <img src="assets/cosmina.png" alt="Cosmina">
+                        </div>
+                        <div class="student2">
+                            <img src="assets/adrian.png" alt="Adrian">
+                        </div>
+                        <div class="student3">
+                            <img src="assets/jade.png" alt="Jade">
+                        </div>
+                        <div class="student4">
+                            <img src="assets/samuel.png" alt="Samuel">
+                        </div>
+                    </div>
+                </div>
+            </body>
+        </section>
+    </main>
+</body>
+
+</html>
