@@ -121,7 +121,7 @@ nav ul li a {
             list-style-type: none;
             display: flex;
             flex: 1;
-            align-content: space-between;
+            justify-content: space-between;
             text-align: end;
             flex-direction: column;
         }
