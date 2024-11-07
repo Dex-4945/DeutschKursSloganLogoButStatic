@@ -116,12 +116,12 @@ nav ul li a {
         }
         nav ul {
             margin-right: 3vw;
-            width: auto;
-            max-width: 550px;
+            width: 50%;
+            max-width: 50vw;
             list-style-type: none;
             display: flex;
             flex: 1;
-            justify-content: space-between;
+            align-content: space-between;
             text-align: end;
             flex-direction: column;
         }
