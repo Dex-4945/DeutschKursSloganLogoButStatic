@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--css style sheet link-->
+<head>
+    <link rel="preload" href="static/banners_style.css" as="style" onload="this.rel='stylesheet'">
+</head>
+
+<!--Body content-->
+<body>
+    <header>
+        <section>
+            <img src="static/wavy-flag-germany-texture-background-generative-ai.jpg" alt="Image of a German wavy flag" class="home_flag_image">
+        </section>
+        <section class="logo-home-section">
+            <a href="/">
+                <img src="static/ParlonsDeutschLogoSlogan.png" alt="AWAP new logo" class='ccb-logo-home'>
+            </a>
+        </section>
+        <section class="nav-section">
+            <span class="hamburger-menu">&#9776;</span>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/aboutus.html">About us</a></li>
+                    <li><a href="/whywebsite.html">Why a website</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="home_main_title">
+            <h1>
+                Verband zur Förderung des Deutschen in der Wallonie
+            </h1>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            const navMenu = document.querySelector('nav ul');
+            const body = document.querySelector('body');
+            // Toggle the active class on menu
+            navMenu.classList.toggle('active');
+            // Prevent body scroll when menu is active
+            body.classList.toggle('menu-open');
+        });
+    </script>
+    <main>
+        <!--actual content section-->
+        <section class="content_main">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="preload" href="static/home_style.css" as="style" onload="this.rel='stylesheet'">
+                <title>Why a website | AWAP</title>
+            </head>
+            <body class="content">
+                <div class="content_container">
+                    <div class="text_section">
+                        <h1>Pourquoi un site web ?</h1>
+                        <div>Dans le cadre de notre cours d'allemand, il nous a été demandé de créer un logo ainsi qu'un slogan pour l'association pour la promotion de langue allemandeen Wallonie. Dans un second temps, en lien avec notre option (relations publiques), afin de mieux répandre son message, nous avons pensé utiliser cette plateforme et les réseaux sociaux pour atteindre le plus de monde possible.</div>
+                        <div>Voici d'ailleurs le lien vers notre compte TikTok: (url)</div>
+                    </div>
+                </div>
+            </body>
+        </section>
+    </main>
+</body>
+
+</html>
