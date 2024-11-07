@@ -62,6 +62,26 @@
     background-color: #ffffff00;
 }
 
+.student1 {
+    width: 20vw;
+    height: 20vw;
+}
+
+.student2 {
+    width: 20vw;
+    height: 20vw;
+}
+
+.student3{
+    width: 20vw;
+    height: 20vw;
+}
+
+.student4{
+    width: 20vw;
+    height: 20vw;
+}
+
 @media (max-width: 1000px) {
     .image_container {
         flex-direction: column;
@@ -73,5 +93,25 @@
     
     .right_image {
         width: 66vw;
+    }
+
+    .student1 {
+        width: 40vw;
+        height: 40vw;
+    }
+    
+    .student2 {
+        width: 40vw;
+        height: 40vw;
+    }
+    
+    .student3{
+        width: 40vw;
+        height: 40vw;
+    }
+    
+    .student4{
+        width: 40vw;
+        height: 40vw;
     }
 }
