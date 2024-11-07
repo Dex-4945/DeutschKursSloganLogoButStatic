@@ -18,7 +18,6 @@
             </a>
         </section>
         <section class="nav-section">
-            <span class="hamburger-menu">&#9776;</span>
             <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
@@ -33,16 +32,6 @@
             </h1>
         </div>
     </header>
-    <script>
-        document.querySelector('.hamburger-menu').addEventListener('click', function() {
-            const navMenu = document.querySelector('nav ul');
-            const body = document.querySelector('body');
-            // Toggle the active class on menu
-            navMenu.classList.toggle('active');
-            // Prevent body scroll when menu is active
-            body.classList.toggle('menu-open');
-        });
-    </script>
     <main>
         <!--actual content section-->
         <section class="content_main">
