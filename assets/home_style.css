@@ -63,8 +63,14 @@
 }
 
 .students_container {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 10vw;
+    margin-right: 10vw;
     display: flex;
     flex-direction: row;
+    align-items: start;
 }
 
 .student1-2-container {
@@ -111,9 +117,15 @@
     }
 
     .students_container {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 10vw;
+        margin-right: 10vw;
         display: flex;
         flex-direction: column;
-    }
+        align-items: start;
+        }
 
     .student1 {
         width: 40vw;
